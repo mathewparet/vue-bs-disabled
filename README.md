@@ -15,6 +15,11 @@ npm run dev
 npm run build
 ```
 
+## Installation
+``` bash
+npm i @mathewparet/vue-bs-disabled
+```
+
 ## Initial Configuration Usage
 
 ``` js

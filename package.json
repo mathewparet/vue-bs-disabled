@@ -1,7 +1,7 @@
 {
   "name": "@mathewparet/vue-bs-disabled",
   "description": "A Vue.Js directive to disable bootstrap controls",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Mathew Paret <mathewparet@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -12,6 +12,7 @@
   "dependencies": {
     "vue": "^2.5.11"
   },
+  "repository": "github:mathewparet/vue-bs-disabled",
   "browserslist": [
     "> 1%",
     "last 2 versions",
