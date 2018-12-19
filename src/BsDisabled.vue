@@ -2,7 +2,6 @@
 let bsDisabled  = {
     install(Vue)
     {
-        console.log('installed');
         Vue.directive('bs-disabled', bsDisabled);
     },
     bind(el, binding, vnode)
