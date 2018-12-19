@@ -8,9 +8,6 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
 # build for production with minification
 npm run build
 ```
@@ -38,7 +35,7 @@ To use the directive simply add ```v-bs-disabled``` to the corresponding element
     <a class="btn btn-primary" v-bs-disabled="1==1">This button is disabled</a><br>
     <a class="btn btn-primary" v-bs-disabled="1==0">This button is enabled</a><br>
     <a class="btn btn-primary" v-bs-disabled.hidden="1==1">This button is hidden</a><br>
-    <a class="btn btn-primary" v-bs-disabled.hidden="1==0">This button is enabled & visible</a><br>
+    <a class="btn btn-primary" v-bs-disabled.hidden="1==0">This button is enabled + visible</a><br>
 </div>
 ```
 
@@ -49,6 +46,10 @@ To use the directive simply add ```v-bs-disabled``` to the corresponding element
     <a class="btn btn-primary" v-bs-disabled="{hidden: false, condition: 1==1}">This button is disabled</a><br>
     <a class="btn btn-primary" v-bs-disabled="{hidden: false, condition: 1==0}">This button is enabled</a><br>
     <a class="btn btn-primary" v-bs-disabled="{hidden: true, condition: 1==1}">This button is hidden</a><br>
-    <a class="btn btn-primary" v-bs-disabled="{hidden: true, condition: 1==0}">This button is enabled & visible</a><br>
+    <a class="btn btn-primary" v-bs-disabled="{hidden: true, condition: 1==0}">This button is enabled + visible</a><br>
 </div>
 ```
+
+### Note
+
+When both ```.hidden``` modifier and the ```hidden``` property of the ```v-bs-disabled``` directives are present, then the element is **hidden** if the condition evaluates to ```true```.

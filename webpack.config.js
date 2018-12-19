@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vue-bs-disabled.vue'
+    filename: 'vue-bs-disabled.min.js',
+    libraryTarget: 'window',
+    library: 'VueBsDisabled'
   },
   module: {
     rules: [
